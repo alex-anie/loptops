@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Tutorial</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+*, *::after, *::before {
+    box-sizing: inherit;
+    padding: inherit;
+    margin: inherit;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: calibri;
+    background-color: #bdbdbd;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 2em; */
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card__body {
+    width: 18.75em;
+    background-color: #fff;
+    margin: 10px;
+    padding:4px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card__body:hover {
+    box-shadow: 2px 1px 17px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card_hero_section {
+    background-color: rgb(3, 52, 80);
+    box-shadow: 2px 1px 17px 1px rgba(0,0,0, 0.3);
+    border-radius: 3px;
+
+    background-image: url('https://user-images.githubusercontent.com/78242022/254052317-34b1a599-728f-48ca-b2a5-1a5d6eb62f97.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+
+.card_hero_section:hover {
+    box-shadow: none;
+}
+
+/* Card Button */
+.card_btn {
+    background-color: #0ebac5;;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5 20px;
+    border: none;
+    transition: background 0.5s ease-in;
+}
+
+.card_btn:hover {
+    background-color: #fff;
+    color: #09162c;
+}
+
+.card_text_heading {
+    color: #0ebac5;
+}
+
+.card_para {
+    color: white;
+}
+
+.sample_text {
+    font-family: monospace;
+    color: red;
+}
+
+.card__body .lambdaTest {
+    color: #fff;
+}
+
+/* MOBILE TABLETS */
+@media all and (max-width: 1177px) {
+    .header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE PHONES */
+@media all and (max-width: 800px) {
+    .header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+</style>
+<body>
+    <main class="container">
+        <header class="header">
+
+            <!-- Card One -->
+            <section class="Card__one card__body">
+                <div class="card_hero_section">
+                    <h3 class="lambdaTest">LambdaTest</h3>
+                    <h1 class="card_text_heading">Next-Generation Mobile Apps and Cross Browser Testing Cloud</h1>
+                    <p class="card_para">Deliver unparalleled digital experience with our next-gen
+                    AI-powered testing cloud platform.</p>
+                    <button class="card_btn">Learn More</button>
+                </div>
+
+                <span class="sample_text">Trusted by 1M+ users globally</span>
+                <p class="sample_para">Ensure exceptional user
+                experience across all devices and browsers.</p>
+            </section>
+
+            <!-- Card Two -->
+            <section class="Card__three card__body">
+                <div class="card_hero_section">
+                    <h3 class="lambdaTest">LambdaTest</h3>
+                    <h1 class="card_text_heading">Live Testing</h1>
+                    <p class="card_para">Perform live interactive cross browser testing of your public or locally hosted websites and web apps on 3000+ real
+                    mobile and desktop browsers running on real operating system.</p>
+                    <button class="card_btn">Learn More</button>
+                </div>
+            
+                <span class="sample_text">Trusted by 1M+ users globally</span>
+                <p class="sample_para">More about Cross Browser Testing arrow</p>
+            </section>
+
+            <!-- Card Three -->
+            <section class="Card__three card__body">
+                <div class="card_hero_section">
+                    <h3 class="lambdaTest">LambdaTest</h3>
+                    <h1 class="card_text_heading">Real Device Cloud for Reliable Mobile App Testing</h1>
+                    <p class="card_para">Test your native hybrid of web mobile apps using LambdaTest’s online real device cloud and
+                        virtual mobile device
+                        platform of emulators and simulators.</p>
+                    <button class="card_btn">Learn More</button>
+                </div>
+            
+                <span class="sample_text">Trusted by 1M+ users globally</span>
+                <p class="sample_para">Eliminating your in-house device labs and bring high scalability to your mobile
+                    app testing.</p>
+            </section>
+
+            <!-- Card Four -->
+            <section class="Card__four card__body">
+                <div class="card_hero_section">
+                    <h3 class="lambdaTest">LambdaTest</h3>
+                    <h1 class="card_text_heading">24/7 Support</h1>
+                    <p class="card_para">Got questions? Throw them to our 24/7 in-app customer
+                    chat support or email us on support@lambdatest.com</p>
+                    <button class="card_btn">Learn More</button>
+                </div>
+            
+                <span class="sample_text">Trusted by 1M+ users globally</span>
+                <p class="sample_para">Eliminating your in-house device labs and bring high scalability to your mobile
+                    app testing.</p>
+            </section>
+
+            <!-- Card Five -->
+            <section class="Card__five card__body">
+                <div class="card_hero_section">
+                    <h3 class="lambdaTest">LambdaTest</h3>
+                    <h1 class="card_text_heading">Third-Party Integrations</h1>
+                    <p class="card_para">With a single click, push bugs in your choice of project management tools, directly from LambdaTest platform.</p>
+                    <button class="card_btn">Learn More</button>
+                </div>
+            
+                <span class="sample_text">Trusted by 1M+ users globally</span>
+                <p class="sample_para">Eliminating your in-house device labs and bring high scalability to your mobile
+                    app testing.</p>
+            </section>
+
+            <!-- Card Six -->
+            <section class="Card__five card__body">
+                <div class="card_hero_section">
+                    <h3 class="lambdaTest">LambdaTest</h3>
+                    <h1 class="card_text_heading">DocumentationSeamless Collaboration</h1>
+                    <p class="card_para">Integrate LambdaTest with your favorite tool and save yourself from manually managing bugs and tasks. Also fits with
+                    your CI/CD pipeline.</p>
+                    <button class="card_btn">Learn More</button>
+                </div>
+            
+                <span class="sample_text">Trusted by 1M+ users globally</span>
+                <p class="sample_para">Eliminating your in-house device labs and bring high scalability to your mobile
+                    app testing.</p>
+            </section>
+        </header>
+    </main>
+</body>
+</html>
+
+</body>
+</html>
