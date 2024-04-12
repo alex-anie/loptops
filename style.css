@@ -292,7 +292,6 @@ header nav {
     text-wrap: wrap;
 }
 
-
 .utl-dash {
     display: inline-block;
     width: 4em;
@@ -432,7 +431,6 @@ header nav {
     color: var(--slate-0-5);
 }
 
-
 @container cardsection (min-width: 800px) {
     .card-section .section-header {
         flex-direction: row;
@@ -460,6 +458,6 @@ footer section {
 }
 
 footer section p{
-   font-family: var(--quicksand);
-   color: var(--slate-0-5);
+    font-family: var(--quicksand);
+    color: var(--slate-0-5);
 }
